@@ -3,4 +3,5 @@ pandas
 numpy
 faiss-cpu
 sentence-transformers
-nltk
+scikit-learn
+torch==2.0.1
