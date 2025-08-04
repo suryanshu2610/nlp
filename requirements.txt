@@ -4,3 +4,4 @@ numpy
 faiss-cpu
 sentence-transformers
 nltk
+torch==1.13.1
