@@ -18,7 +18,8 @@ for col in ['title', 'abstract']:
     else:
         df[col] = ""
 
-embeddings = np.load("embeddings.npy")
+# Load embeddings safely (fixing ValueError)
+embeddings = np.load("embeddings.npy", allow_pickle=True)
 dimension = embeddings.shape[1]
 
 index = faiss.IndexFlatL2(dimension)
